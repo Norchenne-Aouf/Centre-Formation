@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="1205.0" style="-fx-background-color: #1298e0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <Pane prefHeight="72.0" prefWidth="1205.0" style="-fx-background-color: #fff;">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="90.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/formation.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="a" layoutX="1096.0" layoutY="1.0" text="Financier">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane fx:id="rootPane" layoutX="-6.0" layoutY="123.0" prefHeight="592.0" prefWidth="1205.0" />
+      <HBox layoutY="72.0" prefHeight="53.0" prefWidth="1205.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btndashboard" prefHeight="51.0" prefWidth="230.0" text="Accueil">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/a.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#btnStatistique" prefHeight="51.0" prefWidth="253.0" text="Statistiques">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ss.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#btnDepense" prefHeight="51.0" prefWidth="247.0" text="Dépenses">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/exchange.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#btnRevenue" prefHeight="51.0" prefWidth="267.0" text="Revenues">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/exchange.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#btnRapport" prefHeight="50.0" prefWidth="215.0" text="Rapport">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ss.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </HBox>
+      <Hyperlink layoutX="1121.0" layoutY="36.0" onAction="#btnDeconnexion" text="Déconnexion" />
+   </children>
+</AnchorPane>

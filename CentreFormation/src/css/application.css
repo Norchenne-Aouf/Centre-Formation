@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button{
+-fx-background-color:  #1298e0 ;
+	-fx-text-fill:  #fff ;
+}
+.button:hover{
+	-fx-background-color:  #fff;
+	-fx-text-fill:   #1298e0;
+	-fx-border-color: #1298e0;
+}
+
+.table-view .column-header   {
+    -fx-border-color:  #1298e0;
+    -fx-background-color: #1298e0;
+    -fx-fill: #fff ;
+}
+
+.table-row-cell .text {
+       -fx-fill: #000 ;
+       -fx-alignment: baseline-center  ;
+}
+.table-row-ceelected {
+   -fx-background-color: whitesmoke; 
+   -fx-text-background-color:  #6622CC;
+      
+}

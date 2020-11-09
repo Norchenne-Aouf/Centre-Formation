@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="563.0" prefWidth="1205.0" style="-fx-background-color: #1298e0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InscriptionController">
+   <children>
+      <Pane layoutX="375.0" layoutY="-2.0" prefHeight="563.0" prefWidth="829.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="23.0" layoutY="17.0" text="Liste des Inscriptions" textFill="#1298e0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-3.0" layoutY="60.0" prefHeight="10.0" prefWidth="820.0" style="-fx-border-width: 4px;" />
+            <TableView fx:id="tableview" layoutX="24.0" layoutY="78.0" prefHeight="387.0" prefWidth="778.0" stylesheets="@../css/application.css">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="36.0" text="#Id" />
+                  <TableColumn fx:id="sessionCol" prefWidth="95.0" text="session" />
+                  <TableColumn fx:id="formationCol" prefWidth="94.0" text="Formation" />
+                  <TableColumn fx:id="clientCol" prefWidth="87.0" text="Client" />
+                  <TableColumn fx:id="salleCol" prefWidth="81.0" text="Salle" />
+                  <TableColumn fx:id="heurDebutCol" prefWidth="100.0" text="Heure de début" />
+                  <TableColumn fx:id="heurFinCol" prefWidth="100.0" text="Heure de fin" />
+                  <TableColumn fx:id="jCol" prefWidth="75.0" text="Les jours" />
+                  <TableColumn fx:id="dateCol" prefWidth="182.0" text="Date d'ajout de l'inscription " />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Label layoutX="95.0" layoutY="36.0" text="Inscription" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajouter" layoutX="252.0" layoutY="469.0" mnemonicParsing="false" onAction="#btnAjoutI" prefHeight="32.0" prefWidth="104.0" style="-fx-border-color: #fff;" stylesheets="@../css/application.css" text="Ajouter">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="ComSession" layoutX="148.0" layoutY="155.0" prefHeight="32.0" prefWidth="218.0" />
+      <Label layoutX="13.0" layoutY="161.0" text="Session :" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ComClient" layoutX="149.0" layoutY="329.0" prefHeight="32.0" prefWidth="218.0" />
+      <Label layoutX="14.0" layoutY="335.0" text="Client : " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom" layoutX="140.0" layoutY="332.0" text="  " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom" layoutX="140.0" layoutY="387.0" text="   " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="219.0" text="Formation : " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="form" layoutX="148.0" layoutY="215.0" prefHeight="32.0" prefWidth="215.0" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="12.0" layoutY="469.0" mnemonicParsing="false" onAction="#btnAnnuler" prefHeight="32.0" prefWidth="104.0" style="-fx-border-color: #fff;" stylesheets="@../css/application.css" text="Vider">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="idI" layoutX="168.0" layoutY="92.0" textFill="#1298e0" />
+      <Button fx:id="modifier" layoutX="123.0" layoutY="469.0" mnemonicParsing="false" onAction="#btnModifierC" prefHeight="39.0" prefWidth="120.0" style="-fx-border-color: #fff;" stylesheets="@../css/application.css" text="Modifier">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimer" layoutX="1049.0" layoutY="476.0" mnemonicParsing="false" onAction="#deleteInscription" prefHeight="39.0" prefWidth="128.0" stylesheets="@../css/application.css" text="Supprimer" textFill="#fcdf14">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="sessErr" layoutX="148.0" layoutY="187.0" prefHeight="17.0" prefWidth="215.0" textFill="#d71919">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="clientErr" layoutX="150.0" layoutY="364.0" prefHeight="17.0" prefWidth="215.0" textFill="#d71919">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchBox" layoutX="902.0" layoutY="15.0" onKeyTyped="#filter" prefHeight="32.0" prefWidth="290.0" promptText="Recherche" style="-fx-border-color: #1298e0;" />
+      <Label layoutX="13.0" layoutY="276.0" text="Tarif :" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="frais" layoutX="148.0" layoutY="272.0" prefHeight="32.0" prefWidth="215.0" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comP" layoutX="149.0" layoutY="392.0" prefHeight="32.0" prefWidth="218.0" />
+      <Label layoutX="14.0" layoutY="398.0" text="Moyen paiement" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pErr" layoutX="150.0" layoutY="427.0" prefHeight="17.0" prefWidth="215.0" textFill="#d71919">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

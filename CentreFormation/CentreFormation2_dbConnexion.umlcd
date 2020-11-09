@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_xSNbELGaEeqiYJWFXxMCpQ">
+  <modelElement href="CentreFormation2.uml#_wdPh8LGaEeqiYJWFXxMCpQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_2Tj1ELGaEeqiYJWFXxMCpQ" source="_2TkcKbGaEeqiYJWFXxMCpQ">
+    <modelElement href="CentreFormation2.uml#_ww76AbGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_2Tm4YLGaEeqiYJWFXxMCpQ" position="70.0,70.0"/>
+    <stereotypes xmi:id="_2Tj1EbGaEeqiYJWFXxMCpQ" name="Reference">
+      <modelElement href="CentreFormation2.uml#_ww76A7GaEeqiYJWFXxMCpQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_2Tj1ErGaEeqiYJWFXxMCpQ" text=""/>
+    <sourceRole xmi:id="_2Tj1E7GaEeqiYJWFXxMCpQ" aggregationKind="NONE" name="">
+      <modelElement href="CentreFormation2.uml#_ww76ArGaEeqiYJWFXxMCpQ"/>
+      <visibility xmi:id="_2Tj1FLGaEeqiYJWFXxMCpQ" label="+"/>
+      <cardinality xmi:id="_2Tj1FbGaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_2Tj1FrGaEeqiYJWFXxMCpQ" aggregationKind="NONE" name="con" navigable="true">
+      <modelElement href="CentreFormation2.uml#_wtJmNLGaEeqiYJWFXxMCpQ"/>
+      <visibility xmi:id="_2Tj1F7GaEeqiYJWFXxMCpQ" label="+"/>
+      <cardinality xmi:id="_2Tj1GLGaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_2TkcILGaEeqiYJWFXxMCpQ" source="_2TkcKbGaEeqiYJWFXxMCpQ">
+    <modelElement href="CentreFormation2.uml#_ww8hELGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_2TnfcLGaEeqiYJWFXxMCpQ" position="90.0,90.0"/>
+    <stereotypes xmi:id="_2TkcIbGaEeqiYJWFXxMCpQ" name="Reference">
+      <modelElement href="CentreFormation2.uml#_ww8hErGaEeqiYJWFXxMCpQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_2TkcIrGaEeqiYJWFXxMCpQ" text=""/>
+    <sourceRole xmi:id="_2TkcI7GaEeqiYJWFXxMCpQ" aggregationKind="NONE" name="">
+      <modelElement href="CentreFormation2.uml#_ww8hEbGaEeqiYJWFXxMCpQ"/>
+      <visibility xmi:id="_2TkcJLGaEeqiYJWFXxMCpQ" label="+"/>
+      <cardinality xmi:id="_2TkcJbGaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_2TkcJrGaEeqiYJWFXxMCpQ" aggregationKind="NONE" name="stat" navigable="true">
+      <modelElement href="CentreFormation2.uml#_wtKNQbGaEeqiYJWFXxMCpQ"/>
+      <visibility xmi:id="_2TkcJ7GaEeqiYJWFXxMCpQ" label="+"/>
+      <cardinality xmi:id="_2TkcKLGaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2TkcKbGaEeqiYJWFXxMCpQ" name="Connexion" associationsOut="_2Tj1ELGaEeqiYJWFXxMCpQ _2TkcILGaEeqiYJWFXxMCpQ">
+    <modelElement href="CentreFormation2.uml#_wiToILGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_2TkcKrGaEeqiYJWFXxMCpQ" position="50.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_2TkcK7GaEeqiYJWFXxMCpQ" label="+"/>
+    <attributes xmi:id="_2TkcLLGaEeqiYJWFXxMCpQ" defaultValue="&quot;jdbc:oracle:thin:formation/azerty@localhost&quot;" name="DATABASE_URL">
+      <modelElement href="CentreFormation2.uml#_wtIYErGaEeqiYJWFXxMCpQ"/>
+      <stereotypes xmi:id="_2TkcLbGaEeqiYJWFXxMCpQ" name="LegacyStyledElement">
+        <modelElement href="CentreFormation2.uml#_wtI_ILGaEeqiYJWFXxMCpQ"/>
+      </stereotypes>
+      <visibility xmi:id="_2TkcLrGaEeqiYJWFXxMCpQ" label="-"/>
+      <cardinality xmi:id="_2TkcL7GaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_2TkcMLGaEeqiYJWFXxMCpQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_2TkcMbGaEeqiYJWFXxMCpQ" defaultValue="&quot;formation&quot;" name="DATABASE_USERNAME">
+      <modelElement href="CentreFormation2.uml#_wtI_IbGaEeqiYJWFXxMCpQ"/>
+      <stereotypes xmi:id="_2TkcMrGaEeqiYJWFXxMCpQ" name="LegacyStyledElement">
+        <modelElement href="CentreFormation2.uml#_wtJmMLGaEeqiYJWFXxMCpQ"/>
+      </stereotypes>
+      <visibility xmi:id="_2TkcM7GaEeqiYJWFXxMCpQ" label="-"/>
+      <cardinality xmi:id="_2TkcNLGaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_2TkcNbGaEeqiYJWFXxMCpQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_2TkcNrGaEeqiYJWFXxMCpQ" defaultValue="&quot;azerty&quot;" name="DATABASE_PASSWORD">
+      <modelElement href="CentreFormation2.uml#_wtJmMbGaEeqiYJWFXxMCpQ"/>
+      <stereotypes xmi:id="_2TkcN7GaEeqiYJWFXxMCpQ" name="LegacyStyledElement">
+        <modelElement href="CentreFormation2.uml#_wtJmM7GaEeqiYJWFXxMCpQ"/>
+      </stereotypes>
+      <visibility xmi:id="_2TkcOLGaEeqiYJWFXxMCpQ" label="-"/>
+      <cardinality xmi:id="_2TkcObGaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_2TkcOrGaEeqiYJWFXxMCpQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_2TkcO7GaEeqiYJWFXxMCpQ" name="con">
+      <modelElement href="CentreFormation2.uml#_wtJmNLGaEeqiYJWFXxMCpQ"/>
+      <stereotypes xmi:id="_2TkcPLGaEeqiYJWFXxMCpQ" name="LegacyStyledElement">
+        <modelElement href="CentreFormation2.uml#_wtKNQLGaEeqiYJWFXxMCpQ"/>
+      </stereotypes>
+      <visibility xmi:id="_2TkcPbGaEeqiYJWFXxMCpQ" label="+"/>
+      <cardinality xmi:id="_2TkcPrGaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_2TkcP7GaEeqiYJWFXxMCpQ" name="Connection">
+        <modelElement href="CentreFormation2.uml#_woZpELGaEeqiYJWFXxMCpQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_2TkcQLGaEeqiYJWFXxMCpQ" name="stat">
+      <modelElement href="CentreFormation2.uml#_wtKNQbGaEeqiYJWFXxMCpQ"/>
+      <stereotypes xmi:id="_2TkcQbGaEeqiYJWFXxMCpQ" name="LegacyStyledElement">
+        <modelElement href="CentreFormation2.uml#_wtKNQrGaEeqiYJWFXxMCpQ"/>
+      </stereotypes>
+      <visibility xmi:id="_2TkcQrGaEeqiYJWFXxMCpQ" label="+"/>
+      <cardinality xmi:id="_2TkcQ7GaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_2TkcRLGaEeqiYJWFXxMCpQ" name="Statement">
+        <modelElement href="CentreFormation2.uml#_woM0wLGaEeqiYJWFXxMCpQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_2TkcRbGaEeqiYJWFXxMCpQ" name="connex">
+      <modelElement href="CentreFormation2.uml#_wiUPMLGaEeqiYJWFXxMCpQ"/>
+      <visibility xmi:id="_2TkcRrGaEeqiYJWFXxMCpQ" label="+"/>
+      <cardinality xmi:id="_2TkcR7GaEeqiYJWFXxMCpQ" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

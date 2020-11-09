@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_xNzcMLGaEeqiYJWFXxMCpQ">
+  <modelElement href="CentreFormation2.uml#_vZT_wLGaEeqiYJWFXxMCpQ"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_xfOjYLGaEeqiYJWFXxMCpQ" name="Model">
+    <modelElement href="CentreFormation2.uml#_wcSfsrGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_xfOjYbGaEeqiYJWFXxMCpQ" position="-115.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_xfPxgLGaEeqiYJWFXxMCpQ" name="Service">
+    <modelElement href="CentreFormation2.uml#_wcSfs7GaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_xfPxgbGaEeqiYJWFXxMCpQ" position="200.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_xfQYkLGaEeqiYJWFXxMCpQ" name="javafx">
+    <modelElement href="CentreFormation2.uml#_wcSftLGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_xfQYkbGaEeqiYJWFXxMCpQ" position="350.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_xfRmsLGaEeqiYJWFXxMCpQ" name="Controller">
+    <modelElement href="CentreFormation2.uml#_wcXYMLGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_xfRmsbGaEeqiYJWFXxMCpQ" position="-280.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_xfS00LGaEeqiYJWFXxMCpQ" name="Function">
+    <modelElement href="CentreFormation2.uml#_wcn24LGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_xfS00bGaEeqiYJWFXxMCpQ" position="500.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_xfUqALGaEeqiYJWFXxMCpQ" name="dbConnexion">
+    <modelElement href="CentreFormation2.uml#_wdPh8LGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_xfUqAbGaEeqiYJWFXxMCpQ" position="658.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_xfVRELGaEeqiYJWFXxMCpQ" name="application">
+    <modelElement href="CentreFormation2.uml#_wd5CMLGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_xfVREbGaEeqiYJWFXxMCpQ" position="-610.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_xfH1sLGaEeqiYJWFXxMCpQ" name="java">
+    <modelElement href="CentreFormation2.uml#_wcR4oLGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_xfH1sbGaEeqiYJWFXxMCpQ" position="50.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_xfUC8LGaEeqiYJWFXxMCpQ" name="com">
+    <modelElement href="CentreFormation2.uml#_wc6KwLGaEeqiYJWFXxMCpQ"/>
+    <visualProperties xmi:id="_xfUC8bGaEeqiYJWFXxMCpQ" position="-445.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

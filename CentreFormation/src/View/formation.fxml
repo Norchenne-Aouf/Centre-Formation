@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAjout" prefHeight="563.0" prefWidth="1205.0" style="-fx-background-color: #1298e0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormationController">
+   <children>
+      <Label layoutX="108.0" layoutY="21.0" text=" Formation" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="94.0" text="Nom :" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="152.0" text="Type :" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="288.0" text="Mot clé : " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="352.0" text="Description : " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomF" layoutX="137.0" layoutY="90.0" prefHeight="32.0" prefWidth="218.0" style="-fx-border-color: #1b77b5;" />
+      <TextArea fx:id="descF" layoutX="137.0" layoutY="352.0" prefHeight="124.0" prefWidth="218.0" style="-fx-border-color: #1b77b5; -fx-background-color: #fff;" />
+      <TextField fx:id="mcF" layoutX="137.0" layoutY="282.0" prefHeight="32.0" prefWidth="218.0" style="-fx-border-color: #1b77b5;" />
+      <Button fx:id="btnAnnuler" layoutX="14.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnAnnuler" prefHeight="32.0" prefWidth="104.0" style="-fx-border-color: #fff;" stylesheets="@../css/application.css" text="Vider">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="ajouter" layoutX="270.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnAjoutF" prefHeight="32.0" prefWidth="104.0" style="-fx-border-color: #fff;" stylesheets="@../css/application.css" text="Ajouter">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="tarErr" layoutX="136.0" layoutY="181.0" prefHeight="20.0" prefWidth="218.0" textFill="#d70000">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="nomErr" layoutX="137.0" layoutY="122.0" prefHeight="20.0" prefWidth="169.0" textFill="#d70000">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <Pane layoutX="386.0" layoutY="-6.0" prefHeight="573.0" prefWidth="820.0" style="-fx-background-color: #fff;">
+         <children>
+            <Separator layoutX="1.0" layoutY="44.0" prefHeight="10.0" prefWidth="820.0" style="-fx-border-width: 4px;" />
+            <TableView fx:id="tableview" layoutX="20.0" layoutY="80.0" prefHeight="407.0" prefWidth="783.0" stylesheets="@../css/application.css">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="36.0" text="#Id" />
+                  <TableColumn fx:id="nomCol" prefWidth="160.0" text="Nom" />
+                  <TableColumn fx:id="typeCol" minWidth="6.0" prefWidth="118.0" text="Type" />
+                  <TableColumn fx:id="domCol" prefWidth="138.0" text="Domaine" />
+                  <TableColumn fx:id="mcCol" prefWidth="132.0" text="Mot clé" />
+                  <TableColumn fx:id="descCol" prefWidth="198.0" text="Description" />
+               </columns>
+            </TableView>
+            <TextField fx:id="searchBox" layoutX="526.0" layoutY="11.0" onKeyTyped="#filter" prefHeight="32.0" prefWidth="290.0" promptText="Recherche" style="-fx-border-color: #1298e0;" />
+            <Button fx:id="supprimer" layoutX="623.0" layoutY="520.0" mnemonicParsing="false" onAction="#deleteFormation" prefHeight="39.0" prefWidth="176.0" stylesheets="@../css/application.css" text="Supprimer" textFill="#fcdf14">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="407.0" layoutY="7.0" text="Liste des Formations" textFill="#1298e0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="modifier" layoutX="136.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnModifierF" prefHeight="39.0" prefWidth="115.0" style="-fx-border-color: #fff;" stylesheets="@../css/application.css" text="Modifier">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="idF" layoutX="138.0" layoutY="62.0" textFill="#1298e0" />
+      <Label layoutX="21.0" layoutY="216.0" text="Domaine : " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="domErr" layoutX="135.0" layoutY="244.0" prefHeight="20.0" prefWidth="169.0" textFill="#d70000">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="domF" layoutX="134.0" layoutY="211.0" prefHeight="32.0" prefWidth="218.0" style="-fx-border-color: #1b77b5;" />
+      <ComboBox fx:id="typeF" layoutX="137.0" layoutY="148.0" prefHeight="32.0" prefWidth="218.0" style="-fx-border-color: #1b77b5;" />
+   </children>
+</AnchorPane>

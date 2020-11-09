@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="549.0" prefWidth="837.0" style="-fx-background-color: #1298e0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <TextField fx:id="username" layoutX="520.0" layoutY="279.0" prefHeight="39.0" prefWidth="239.0" promptText="Nom d'utilisateur" style="-fx-border-color: #236caa; -fx-background-color: #fff; -fx-border-width: 2px;" />
+      <PasswordField fx:id="password" layoutX="520.0" layoutY="355.0" prefHeight="39.0" prefWidth="239.0" promptText="Mot de passe" style="-fx-border-color: #236caa; -fx-background-color: #fff; -fx-border-width: 2px;" />
+      <Button fx:id="btncnx" layoutX="520.0" layoutY="430.0" mnemonicParsing="false" onAction="#Login" prefHeight="39.0" prefWidth="239.0" style="-fx-border-color: #f8f6eb;" stylesheets="@../css/application.css" text="Connexion" textFill="#f8f6eb">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="558.0" layoutY="-4.0" stroke="#029fff" strokeType="INSIDE" strokeWidth="0.0" width="375.0" />
+      <ImageView fitHeight="272.0" fitWidth="268.0" layoutX="37.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/formation.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="519.0" layoutY="50.0" text="Bienvenue " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="118.0" text="Centre de Formation" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="48.0" layoutX="466.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/yellow%20user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="83.0" layoutX="466.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lock.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="type" layoutX="520.0" layoutY="210.0" prefHeight="39.0" prefWidth="239.0" promptText="Vous etes" style="-fx-border-color: #236caa; -fx-border-width: 2px; -fx-background-color: #fff;" visibleRowCount="3" />
+   </children>
+</AnchorPane>

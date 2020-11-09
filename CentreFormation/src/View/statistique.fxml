@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="563.0" prefWidth="1205.0" style="-fx-background-color: #1298e0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StatistiqueController">
+   <children>
+      <TabPane layoutX="-2.0" layoutY="-2.0" prefHeight="569.0" prefWidth="1212.0" stylesheets="@../css/application.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="tabA" text="Statistique des inscription">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="pieIns" layoutX="406.0" layoutY="14.0" prefHeight="519.0" prefWidth="806.0" title="Nombres des inscription par client" />
+                        <TableView fx:id="tableview" layoutX="36.0" layoutY="17.0" prefHeight="503.0" prefWidth="349.0" stylesheets="@../css/application.css">
+                           <columns>
+                              <TableColumn fx:id="clientCol" prefWidth="196.0" text="Client" />
+                              <TableColumn fx:id="idCol" minWidth="0.0" prefWidth="152.0" text="Nombre  d'inscription" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Statistique des formation par période">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="540.0" prefWidth="1250.0">
+                     <children>
+                        <BarChart fx:id="barChart" layoutX="5.0" layoutY="9.0" prefHeight="528.0" prefWidth="1201.0" styleClass="default-color0" stylesheets="@../css/application.css" title="Statistique des formation par période">
+                          <xAxis>
+                            <CategoryAxis label="Mois" side="BOTTOM" fx:id="x" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="y" label="nombre des formations" side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Statistique des clients par métier">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="pie" layoutY="3.0" prefHeight="533.0" prefWidth="1210.0" title="Nombre des clients par métier" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Statistique financiére">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BarChart fx:id="bar" layoutX="13.0" layoutY="18.0" prefHeight="509.0" prefWidth="562.0" title="Revenue Annuelle">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <BarChart fx:id="bard" layoutX="616.0" layoutY="14.0" prefHeight="509.0" prefWidth="562.0" title="Depense Annuelle">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+         <styleClass>
+            <String fx:value="tab" />
+            <String fx:value="tab-label" />
+            <String fx:value="tab-header-area" />
+            <String fx:value="tab-pane" />
+            <String fx:value="table-row-ceelected" />
+         </styleClass>
+      </TabPane>
+   </children>
+</AnchorPane>
